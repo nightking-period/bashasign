@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Devanagari:wght@100..900&family=Noto+Sans+Telugu:wght@100..900&family=Noto+Sans+Tamil:wght@100..900&family=Noto+Sans+Kannada:wght@100..900&family=Noto+Sans+Malayalam:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Resets & Accessibility ──────────────────────────────── */
+@layer base {
+  :root {
+    --font-scale: 1;
+    --sidebar-width: 15rem;
+    --navbar-height: 3.75rem;
+    color-scheme: light;
+  }
+
+  /* High contrast mode */
+  .high-contrast {
+    --tw-ring-color: #000;
+    filter: contrast(1.2);
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  .reduce-motion *,
+  .reduce-motion *::before,
+  .reduce-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  /* Font size scaling */
+  .font-large  { --font-scale: 1.125; }
+  .font-xl     { --font-scale: 1.25; }
+
+  html {
+    font-size: calc(16px * var(--font-scale, 1));
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-gray-900 font-sans antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Skip link */
+  .skip-link {
+    @apply absolute -top-full left-4 z-[9999] px-4 py-2 rounded
+      bg-primary text-white font-medium text-sm
+      focus:top-4 transition-all;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2;
+  }
+
+  /* Remove default focus for mouse users */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-gray-300 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-gray-400; }
+
+  /* Selection */
+  ::selection { @apply bg-accent-100 text-accent-800; }
+
+  /* Indic script rendering fix */
+  :lang(te), :lang(hi), :lang(ta), :lang(kn), :lang(ml), :lang(mr), :lang(bn) {
+    word-break: normal;
+    overflow-wrap: break-word;
+    line-height: 1.8;
+  }
+}
+
+/* ─── Component Layer ───────────────────────────────────────────── */
+@layer components {
+  /* Card variants */
+  .card {
+    @apply bg-white rounded-xl border border-border shadow-sm;
+  }
+  .card-hover {
+    @apply card transition-shadow duration-200 hover:shadow-md cursor-pointer;
+  }
+  .card-interactive {
+    @apply card-hover active:scale-[0.99] transition-transform;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-primary  { @apply badge bg-primary-50 text-primary-700; }
+  .badge-accent   { @apply badge bg-accent-50 text-accent-700; }
+  .badge-success  { @apply badge bg-success-light text-success-dark; }
+  .badge-warning  { @apply badge bg-warning-light text-warning-dark; }
+  .badge-error    { @apply badge bg-error-light text-error-dark; }
+  .badge-muted    { @apply badge bg-gray-100 text-gray-600; }
+
+  /* Status dot */
+  .status-dot {
+    @apply inline-block w-2.5 h-2.5 rounded-full;
+  }
+  .status-ready       { @apply status-dot bg-success; }
+  .status-processing  { @apply status-dot bg-accent animate-pulse; }
+  .status-error       { @apply status-dot bg-error; }
+  .status-idle        { @apply status-dot bg-muted; }
+  .status-warning     { @apply status-dot bg-warning; }
+
+  /* Sign token chip */
+  .sign-chip {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg
+      bg-primary-50 text-primary-700 font-mono text-sm font-semibold
+      border border-primary-100;
+  }
+  .sign-chip-active {
+    @apply sign-chip bg-primary text-white border-primary animate-sign-flash;
+  }
+
+  /* Mock / Demo label */
+  .demo-label {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs
+      bg-amber-50 text-amber-700 border border-amber-200 font-medium;
+  }
+
+  /* Section heading */
+  .section-heading {
+    @apply text-2xl font-bold text-primary tracking-tight;
+  }
+
+  /* Divider with label */
+  .divider-label {
+    @apply flex items-center gap-3 text-muted text-sm;
+  }
+  .divider-label::before,
+  .divider-label::after {
+    content: '';
+    @apply flex-1 h-px bg-border;
+  }
+
+  /* Avatar panel */
+  .avatar-panel {
+    @apply relative bg-gradient-to-b from-primary-50 to-white
+      rounded-2xl border border-border overflow-hidden
+      flex items-center justify-center min-h-[280px];
+  }
+}
+
+/* ─── Utilities ─────────────────────────────────────────────────── */
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .scrollbar-hide { scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .focus-ring { @apply focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2; }
+}

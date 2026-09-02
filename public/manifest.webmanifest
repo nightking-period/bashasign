@@ -1,0 +1,18 @@
+{
+  "short_name": "BhashaSign",
+  "name": "BhashaSign — Two-Way Indian Sign Language Communication Assistant",
+  "description": "Two-way multilingual communication assistant for government offices in India connecting officials and Deaf citizens using ISL.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1a365d",
+  "theme_color": "#1a365d",
+  "display": "standalone",
+  "orientation": "any",
+  "categories": ["government", "accessibility", "productivity"]
+}

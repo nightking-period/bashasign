@@ -1,0 +1,387 @@
+import type { SignDictionaryEntry } from '@/types'
+
+// IMPORTANT: These sign mappings are UNVALIDATED MOCK DATA.
+// They must be reviewed and corrected by an ISL-qualified expert
+// before being used for real communication.
+
+export const SIGN_DICTIONARY: Record<string, SignDictionaryEntry> = {
+  BRING: {
+    conceptId: 'BRING',
+    dominant: 'BRING-1',
+    signs: [{
+      id: 'BRING-1',
+      label: 'Bring',
+      description: 'Motion toward speaker (placeholder)',
+      signAsset: null,
+      animationKey: 'bring',
+      supported: true,
+      validated: false,
+      handshape: 'open-5',
+      movement: 'toward-body',
+      location: 'neutral-space',
+    }],
+  },
+  SHOW: {
+    conceptId: 'SHOW',
+    dominant: 'SHOW-1',
+    signs: [{
+      id: 'SHOW-1',
+      label: 'Show',
+      description: 'Palm outward display (placeholder)',
+      signAsset: null,
+      animationKey: 'show',
+      supported: true,
+      validated: false,
+    }],
+  },
+  GIVE: {
+    conceptId: 'GIVE',
+    dominant: 'GIVE-1',
+    signs: [{
+      id: 'GIVE-1',
+      label: 'Give',
+      description: 'Forward extension (placeholder)',
+      signAsset: null,
+      animationKey: 'give',
+      supported: true,
+      validated: false,
+    }],
+  },
+  WAIT: {
+    conceptId: 'WAIT',
+    dominant: 'WAIT-1',
+    signs: [{
+      id: 'WAIT-1',
+      label: 'Wait',
+      description: 'Hand flat, downward motion (placeholder)',
+      signAsset: null,
+      animationKey: 'wait',
+      supported: true,
+      validated: false,
+    }],
+  },
+  COME: {
+    conceptId: 'COME',
+    dominant: 'COME-1',
+    signs: [{
+      id: 'COME-1',
+      label: 'Come',
+      description: 'Beckoning motion (placeholder)',
+      signAsset: null,
+      animationKey: 'come',
+      supported: true,
+      validated: false,
+    }],
+  },
+  GO: {
+    conceptId: 'GO',
+    dominant: 'GO-1',
+    signs: [{
+      id: 'GO-1',
+      label: 'Go',
+      description: 'Away motion (placeholder)',
+      signAsset: null,
+      animationKey: 'go',
+      supported: true,
+      validated: false,
+    }],
+  },
+  TOMORROW: {
+    conceptId: 'TOMORROW',
+    dominant: 'TOMORROW-1',
+    signs: [{
+      id: 'TOMORROW-1',
+      label: 'Tomorrow',
+      description: 'Forward arc from cheek (placeholder)',
+      signAsset: null,
+      animationKey: 'tomorrow',
+      supported: true,
+      validated: false,
+    }],
+  },
+  TODAY: {
+    conceptId: 'TODAY',
+    dominant: 'TODAY-1',
+    signs: [{
+      id: 'TODAY-1',
+      label: 'Today',
+      description: 'Both hands down (placeholder)',
+      signAsset: null,
+      animationKey: 'today',
+      supported: true,
+      validated: false,
+    }],
+  },
+  YOUR: {
+    conceptId: 'YOUR',
+    dominant: 'YOUR-1',
+    signs: [{
+      id: 'YOUR-1',
+      label: 'Your',
+      description: 'Point toward addressee (placeholder)',
+      signAsset: null,
+      animationKey: 'your',
+      supported: true,
+      validated: false,
+    }],
+  },
+  AADHAAR_CARD: {
+    conceptId: 'AADHAAR_CARD',
+    dominant: 'AADHAAR-1',
+    signs: [{
+      id: 'AADHAAR-1',
+      label: 'Aadhaar Card',
+      description: 'Fingerspell A + card shape (placeholder)',
+      signAsset: null,
+      animationKey: 'aadhaar_card',
+      supported: true,
+      validated: false,
+    }],
+  },
+  PAN_CARD: {
+    conceptId: 'PAN_CARD',
+    dominant: 'PAN-1',
+    signs: [{
+      id: 'PAN-1',
+      label: 'PAN Card',
+      description: 'Fingerspell P + card shape (placeholder)',
+      signAsset: null,
+      animationKey: 'pan_card',
+      supported: true,
+      validated: false,
+    }],
+  },
+  PASSBOOK: {
+    conceptId: 'PASSBOOK',
+    dominant: 'PASSBOOK-1',
+    signs: [{
+      id: 'PASSBOOK-1',
+      label: 'Passbook',
+      description: 'Book shape near palm (placeholder)',
+      signAsset: null,
+      animationKey: 'passbook',
+      supported: true,
+      validated: false,
+    }],
+  },
+  PHOTO: {
+    conceptId: 'PHOTO',
+    dominant: 'PHOTO-1',
+    signs: [{
+      id: 'PHOTO-1',
+      label: 'Photograph',
+      description: 'Camera shape (placeholder)',
+      signAsset: null,
+      animationKey: 'photo',
+      supported: true,
+      validated: false,
+    }],
+  },
+  FINGERPRINT: {
+    conceptId: 'FINGERPRINT',
+    dominant: 'FINGERPRINT-1',
+    signs: [{
+      id: 'FINGERPRINT-1',
+      label: 'Fingerprint',
+      description: 'Finger press (placeholder)',
+      signAsset: null,
+      animationKey: 'fingerprint',
+      supported: true,
+      validated: false,
+    }],
+  },
+  PENSION: {
+    conceptId: 'PENSION',
+    dominant: 'PENSION-1',
+    signs: [{
+      id: 'PENSION-1',
+      label: 'Pension',
+      description: 'Money + elderly signs (placeholder)',
+      signAsset: null,
+      animationKey: 'pension',
+      supported: true,
+      validated: false,
+    }],
+  },
+  RECEIVED: {
+    conceptId: 'RECEIVED',
+    dominant: 'RECEIVED-1',
+    signs: [{
+      id: 'RECEIVED-1',
+      label: 'Received',
+      description: 'Hands pulling inward (placeholder)',
+      signAsset: null,
+      animationKey: 'received',
+      supported: true,
+      validated: false,
+    }],
+  },
+  PENDING: {
+    conceptId: 'PENDING',
+    dominant: 'PENDING-1',
+    signs: [{
+      id: 'PENDING-1',
+      label: 'Pending',
+      description: 'Wait + question (placeholder)',
+      signAsset: null,
+      animationKey: 'pending',
+      supported: true,
+      validated: false,
+    }],
+  },
+  APPROVED: {
+    conceptId: 'APPROVED',
+    dominant: 'APPROVED-1',
+    signs: [{
+      id: 'APPROVED-1',
+      label: 'Approved',
+      description: 'Thumbs up (placeholder)',
+      signAsset: null,
+      animationKey: 'approved',
+      supported: true,
+      validated: false,
+    }],
+  },
+  REJECTED: {
+    conceptId: 'REJECTED',
+    dominant: 'REJECTED-1',
+    signs: [{
+      id: 'REJECTED-1',
+      label: 'Rejected',
+      description: 'Thumbs down (placeholder)',
+      signAsset: null,
+      animationKey: 'rejected',
+      supported: true,
+      validated: false,
+    }],
+  },
+  APPLICATION: {
+    conceptId: 'APPLICATION',
+    dominant: 'APPLICATION-1',
+    signs: [{
+      id: 'APPLICATION-1',
+      label: 'Application',
+      description: 'Writing motion (placeholder)',
+      signAsset: null,
+      animationKey: 'application',
+      supported: true,
+      validated: false,
+    }],
+  },
+  DOCUMENT: {
+    conceptId: 'DOCUMENT',
+    dominant: 'DOCUMENT-1',
+    signs: [{
+      id: 'DOCUMENT-1',
+      label: 'Document',
+      description: 'Paper shape (placeholder)',
+      signAsset: null,
+      animationKey: 'document',
+      supported: true,
+      validated: false,
+    }],
+  },
+  SIGN_HERE: {
+    conceptId: 'SIGN_HERE',
+    dominant: 'SIGN-1',
+    signs: [{
+      id: 'SIGN-1',
+      label: 'Sign Here',
+      description: 'Writing + pointing (placeholder)',
+      signAsset: null,
+      animationKey: 'sign_here',
+      supported: true,
+      validated: false,
+    }],
+  },
+  PLEASE_WAIT: {
+    conceptId: 'PLEASE_WAIT',
+    dominant: 'PLEASE-WAIT-1',
+    signs: [{
+      id: 'PLEASE-WAIT-1',
+      label: 'Please Wait',
+      description: 'Please + wait (placeholder)',
+      signAsset: null,
+      animationKey: 'please_wait',
+      supported: true,
+      validated: false,
+    }],
+  },
+  COUNTER_3: {
+    conceptId: 'COUNTER_3',
+    dominant: 'COUNTER-3-1',
+    signs: [{
+      id: 'COUNTER-3-1',
+      label: 'Counter 3',
+      description: 'Three fingers + direction (placeholder)',
+      signAsset: null,
+      animationKey: 'counter_3',
+      supported: true,
+      validated: false,
+    }],
+  },
+  HELLO: {
+    conceptId: 'HELLO',
+    dominant: 'HELLO-1',
+    signs: [{
+      id: 'HELLO-1',
+      label: 'Hello / Namaste',
+      description: 'Open palm raised near temple, waving smoothly outward',
+      signAsset: null,
+      animationKey: 'hello',
+      supported: true,
+      validated: false,
+    }],
+  },
+  BYE: {
+    conceptId: 'BYE',
+    dominant: 'BYE-1',
+    signs: [{
+      id: 'BYE-1',
+      label: 'Goodbye',
+      description: 'Open palm raised at chest height waving side to side',
+      signAsset: null,
+      animationKey: 'bye',
+      supported: true,
+      validated: false,
+    }],
+  },
+  SORRY: {
+    conceptId: 'SORRY',
+    dominant: 'SORRY-1',
+    signs: [{
+      id: 'SORRY-1',
+      label: 'Sorry',
+      description: 'Closed fist rubbing in a circle over the chest',
+      signAsset: null,
+      animationKey: 'sorry',
+      supported: true,
+      validated: false,
+    }],
+  },
+  THANK_YOU: {
+    conceptId: 'THANK_YOU',
+    dominant: 'THANK-YOU-1',
+    signs: [{
+      id: 'THANK-YOU-1',
+      label: 'Thank You',
+      description: 'Flat fingertips from chin extending forward with a nod',
+      signAsset: null,
+      animationKey: 'thank_you',
+      supported: true,
+      validated: false,
+    }],
+  },
+}
+
+
+export function getSign(conceptId: string): SignDictionaryEntry | undefined {
+  return SIGN_DICTIONARY[conceptId]
+}
+
+export function getSignSequenceLabels(conceptIds: string[]): string[] {
+  return conceptIds.map(id => {
+    const entry = SIGN_DICTIONARY[id]
+    return entry?.signs[0]?.label ?? id
+  })
+}

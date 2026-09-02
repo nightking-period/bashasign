@@ -1,0 +1,96 @@
+{
+  "totalSamples": 36,
+  "exportDate": "2026-09-02T15:17:22.510Z",
+  "conceptsCount": [
+    {
+      "concept": "AADHAAR",
+      "count": 4
+    },
+    {
+      "concept": "CARD",
+      "count": 3
+    },
+    {
+      "concept": "DOCUMENT",
+      "count": 3
+    },
+    {
+      "concept": "SIGNATURE",
+      "count": 3
+    },
+    {
+      "concept": "BRING",
+      "count": 3
+    },
+    {
+      "concept": "SHOW",
+      "count": 2
+    },
+    {
+      "concept": "GIVE",
+      "count": 4
+    },
+    {
+      "concept": "SUBMIT",
+      "count": 3
+    },
+    {
+      "concept": "WAIT",
+      "count": 3
+    },
+    {
+      "concept": "COME",
+      "count": 3
+    },
+    {
+      "concept": "GO",
+      "count": 3
+    },
+    {
+      "concept": "PENSION",
+      "count": 2
+    },
+    {
+      "concept": "BANK",
+      "count": 0
+    },
+    {
+      "concept": "RECEIVED",
+      "count": 0
+    },
+    {
+      "concept": "PENDING",
+      "count": 0
+    },
+    {
+      "concept": "HELP",
+      "count": 0
+    },
+    {
+      "concept": "IDLE",
+      "count": 0
+    },
+    {
+      "concept": "UNKNOWN",
+      "count": 0
+    }
+  ],
+  "signersCount": [
+    {
+      "signer": "signer_01",
+      "count": 36
+    },
+    {
+      "signer": "signer_02",
+      "count": 0
+    },
+    {
+      "signer": "signer_03",
+      "count": 0
+    },
+    {
+      "signer": "signer_04",
+      "count": 0
+    }
+  ]
+}
